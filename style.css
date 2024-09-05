@@ -1,0 +1,494 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/****** general settings *****/
+* {box-sizing: border-box}
+
+body, .main {
+	margin: 0;
+	padding: 0;
+	font-family: Batang;
+}
+
+.centerdiv {
+	display: block;
+	margin: 0 20px;
+}
+
+.clear {
+	clear: both;
+}
+
+a span {
+	vertical-align: -2px;
+}
+
+
+/******* header ********/
+.header {
+	background-color: #2e2e2e;
+	height: 60px;
+}
+
+.header .connects {
+	background-color: #2e2e2e;
+}
+
+/*----------- register -----------*/
+.header .connects ul.register {
+	display: inline-block;
+	list-style-type: none;
+	margin: 0;
+	padding: 20px 20px;
+	padding-left: 0;/* be careful */
+}
+
+.header .connects ul.register li {
+	float: left;
+	border-right: 1px solid #9f9f9f;
+	padding: 0 5px;
+	line-height: 15px;
+}
+
+.header .connects ul.register li:first-child {
+	padding-left: 0;
+}
+
+.header .connects ul.register li:last-child {
+	border: none;	
+}
+
+.header .connects ul.register li a {
+	color: #9f9f9f;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.header .connects ul.register li a:hover {
+	opacity: 0.7;
+}
+
+/*----------- socials ------------*/
+.header .connects ul.socials {
+	display: inline-block;
+	list-style-type: none;
+	float: right;
+	margin: 0;
+	padding: 20px 0;/* padding left&right=0 but for register padding left&right=20px ast */
+}
+
+.header .connects ul.socials li {
+	float: right;
+	padding: 0 5px;
+}
+
+.header .connects ul.socials li a {
+	color: #9f9f9f;
+	background-color: #787878;
+	padding: 8px 8px;
+	border-radius: 15px;
+	text-decoration: none;
+}
+
+.header .connects ul.socials li a#c1:hover {background-color: #D48E35}
+.header .connects ul.socials li a#c2:hover {background-color: #E3383B}
+.header .connects ul.socials li a#c3:hover {background-color: #C55A5B}
+.header .connects ul.socials li a#c4:hover {background-color: #45B8D5}
+.header .connects ul.socials li a#c5:hover {background-color: #2A6DBC}
+
+
+/********* downheader ********/
+.downheader {
+	background-color: #fff;
+	height: 220px;
+}
+
+/*-------- nav ---------*/
+.downheader nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+	padding-top: 40px;
+	height: 72px;
+}
+
+.downheader nav ul li {
+	float: left;
+	padding: 3px 5px;
+}
+
+.downheader nav ul li:first-child {
+	padding-left: 0;
+}
+
+.downheader nav ul li a {
+	color: #000;
+	padding: 3px 5px;
+	font-size: 14px;
+	text-decoration: none;
+}
+/* I want to be padding-left: 0; for a:first-child but it affects to all a */
+
+.downheader nav ul li a:hover {
+	background-color: #eee;
+}
+
+.line {
+	background-color: #f1f1f1;
+	height: 6px;
+}
+
+/*---------- logo ---------*/
+.downheader .logo {
+	height: 144px;
+}
+
+.downheader .logo .texts {
+	display: inline-block;
+}
+
+.downheader .logo .texts h1,p {
+	margin-bottom: 0;
+	margin-top: 40px;
+}
+.downheader .logo .texts p {
+	margin-top: 3px;
+	color: #9f9f9f;
+	font-size: 12px;
+}
+
+.downheader .logo .search {
+	padding-top: 68px;
+	float: right;
+}
+
+.downheader .logo .search input {
+	width: 215px;
+	height: 30px;
+	padding-left: 5px;
+	border: none;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+}
+
+.downheader .logo .search button {
+	height: 30px;
+	border: none;
+	padding: 0 10px;
+	color: #fff;
+	background-color: #0099ff;
+	border-radius: 5px;
+}
+
+
+/********** slider ********/
+.slider {
+	height: 458px;
+	background-color: #f1f1f1;
+}
+
+.slider .leftcontent {
+	display: inline-block;
+}
+
+.slider .leftcontent p {
+	margin-top: 0;
+}
+
+.slider .leftcontent footer {
+	margin-top: 28px;
+}
+
+.slider .leftcontent footer a {
+	color: #fff;
+	padding: 6px 10px;
+	background-color: #0099ff;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.slider .leftcontent footer a:hover {
+	opacity: 0.7;
+}
+
+/*-------- rightslider --------*/
+.slider .rightslider {
+	width: 550px;
+	height: 438px;
+	float: right;
+	margin-top: 11px;
+	background-color: #333333;
+}
+
+.slider .rightslider h3 {
+	display: inline-block;
+	margin: 20px auto;
+}
+
+.slider .rightslider ul {
+	list-style-type: none;
+	display: inline-block;
+}
+
+.slider .rightslider ul li {
+	float: left;
+	background-clip: #000;
+	border-radius: 30px;
+}
+
+.slider .rightslider ul li a span {
+	width: 5px;
+	height: 5px;
+	background-clip: #000;
+	border-radius: 30px;
+}
+
+
+/********** content *********/
+.content {
+	height: 850px;  /* it should be 667px; */
+}
+
+.content .leftcontent {
+	width: 470px;
+	height: 505px;
+	float: left;
+}
+
+.content .rightcontent {
+	float: right;
+	width: 470px;
+}
+
+.content .rightcontent .box {
+	width: 40%;
+	float: right;
+	margin:40px 0 40px 20px;
+}
+
+.content .rightcontent .box .cont {
+	width: 80px;
+	height: 85px;
+	background-color: #000;
+	color: #fff;
+	margin: 0 auto;
+}
+
+.content .rightcontent .box h4 {
+	text-align: center;
+	color: #0099ff;
+}
+
+.content .rightcontent .box p {
+	margin-top: 0;
+	text-align: center;
+}
+
+.content section {
+	height: 120px;
+	background-color: #e0e0e0;
+	padding: 0;
+	margin: 0;
+	border-left: 8px solid #0099ff;
+	position: relative;
+}
+
+/*-------- adver ----------*/
+.content .adver h1 {
+	display: inline-block;
+	color: #333333;
+	font-size: 32px;
+	margin-bottom: 0;
+	margin-left: 30px;
+	padding-bottom: 5px;
+}
+
+.content .adver h3 {
+	display: inline-block;
+	color: #616161;
+	text-decoration: underline;
+	margin-left: 30px;
+	margin-top: 0;
+}
+
+.content .adver a {
+	color: #ddd;
+	background-color: #0099ff;
+	padding: 12px 10px;
+	font-size: 24px;
+	position: absolute;
+	top: 40px;
+	right: 60px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.content .adver a:hover {
+	opacity: 0.7;
+}
+
+
+/********* accessory *********/
+.accessory {
+	height: 387px;
+	background-color: #1a1a1a;
+}
+
+.accessory .container {
+	
+}
+
+.accessory .container .boxes {
+	float: left;
+	width: 25%;
+	height: 387px;
+	padding: 0 10px;
+	padding-top: 45px;
+}
+.accessory .container .boxes h3 {
+	color: #fff;
+	margin-top: 0;
+}
+
+.accessory .container .boxes .first {
+	position: relative;
+}
+
+.accessory .container .boxes .first div {
+	width: 300px;
+	height: 90px;
+	background-color: #232323;
+	border: 1px solid #fff;
+}
+
+.accessory .container .boxes .first div p {
+	display: inline;
+	font-family: sans-serif;
+	color: #fff;
+	margin: 0 25%;
+}
+
+.accessory .container .boxes .first p {
+	color: #666666;
+	width: 280px;
+	margin-top: 25px;
+}
+
+.accessory .container .boxes .first a {
+	color: #0099ff;
+	font-size: 12px;
+	text-decoration: none;
+	position: absolute;
+	right: 0;
+}
+
+.accessory .container .boxes .first a:hover {
+	opacity: 0.7;
+}
+
+.accessory .container .boxes .second {
+	
+}
+
+.accessory .container .boxes .second ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.accessory .container .boxes .second ul li {
+	border-bottom: 1px solid #555555;
+	
+}
+
+.accessory .container .boxes .second ul li a {
+	display: inline-block;
+	color: #0099ff;
+	padding: 3px 0;
+	text-decoration: none;
+}
+
+.accessory .container .boxes .second a:hover {
+	opacity: 0.7;
+}
+
+
+.accessory .container .boxes .third div p,h4,h5 {
+	color: #666666;
+}
+
+.accessory .container .boxes .third div a {
+	float: right;
+	color: #0099ff;
+	margin: 5px 0;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.accessory .container .boxes .third a:hover {
+	opacity: 0.7;
+}
+
+.accessory .container .boxes .third .posts .upper,.downer,h4,h5,p,a {
+	margin:0;
+	padding: 0;
+}
+
+.accessory .container .boxes .forth form #name,#email,#subject,#textarea {
+	width: 223px;
+	height: 32px;
+	background-color: #232323;
+	color: #989898;
+	border: none;
+	margin: 5px 0;
+	border-radius: 5px;
+	padding: 0 10px;
+}
+
+.accessory .container .boxes .forth form #textarea {
+	height: 110px;
+}
+
+.accessory .container .boxes .forth form #submit {
+	width: 77px;
+	height: 32px;
+	background-color: #0099ff; 
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+/********** footer **********/
+.footer {
+	height: 60px;
+	background-color: #222222;
+	border-top: 1px solid #434343;
+}
+
+footer p:first-child {
+	float: left;
+	color: #666666;
+	font-size: 12px;
+	margin: 0;
+	margin-top: 20px;
+}
+
+footer p:last-child {
+	float: right;
+	color: #666666;
+	font-size: 12px;
+	margin: 0;
+	margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
